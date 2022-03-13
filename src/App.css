@@ -47,7 +47,7 @@ body {
 	font-size: 20px;
 	font-family: Zen Kurenaido;
 	background-color:var(--blue);
-  border: 2px solid white;
+  border: 2px solid antiquewhite;
 	border-radius: 5px;
 }
 
@@ -110,26 +110,31 @@ body {
 .header {
 	display: flex;
 	flex-direction: column;
-  flex-wrap: wrap;
+  	flex-wrap: wrap;
 }
-
 .icon-container {
-  display: flex;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+	margin: 0.5em;
 }
 
 .name {
+	text-align: center;
 	font-family: Neonderthaw;
-	font-size: 50px;
+	font-size: 39px;
 	color: var(--darkBlue);
-	text-shadow: 2px 2px white;
+	text-shadow: 2px 2px antiquewhite;
 }
 
 .sub-header {
+	border: 10px var(--darkBlue);
 	display: flex;
 	flex: wrap;
 	flex-direction: row;
 	justify-content: space-evenly;
 	font-family: Zen Kurenaido;
+	font-size: 15px;
 }
 
 li, a {
@@ -161,7 +166,7 @@ button {
 	flex: wrap;
 	font-size: 20px;
 	font-family: Zen Kurenaido;
-	background-color: white;
+	background-color: antiquewhite;
   color: black;
   border: 2px solid var(--darkBlue);
 	border-radius: 5px;
@@ -176,11 +181,9 @@ button:hover {
 	font-family: Neonderthaw;
 	font-size: 100px;
 	color: var(--darkBlue);
-	text-shadow: 2px 2px white;
-	padding-top: 12%;
-	padding-bottom: 5%;
+	text-shadow: 2px 2px antiquewhite;
+	padding: 2em;
 }
-
 .resume-header {
 	text-align: center;
 }
@@ -192,7 +195,7 @@ button:hover {
 	flex-direction: column;
 	align-items: center;
 	font-size: 75%;
-	background-color: white;
+	background-color: antiquewhite;
 	margin: 0px auto;
 	width: 60%;
 	box-shadow:
@@ -406,9 +409,18 @@ input {
 	}
 }
 
-/* @media (max-width: 1358px) {
+@media (max-width: 414px) {
 	ion-icon {
-	padding-top: 2px;
+	padding-bottom: 1em;
 	}
-} */
+	#greeting {
+		font-size: 50px;
+	}
+	.welcome-container {
+		display: flex;
+    	flex-direction: column;
+    	align-content: center;
+    	flex-wrap: wrap;
+	}
+}
 
