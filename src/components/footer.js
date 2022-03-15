@@ -33,7 +33,7 @@ const StyledFab = styled(Fab)({
 
 const Footer = () => {
     return (
-        <React.Fragment>
+        <React.Fragment className="footer">
             <Helmet>
                 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
                 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -47,7 +47,7 @@ const Footer = () => {
                 <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet"></link>
             </Helmet>
             <div className="footer">
-                <AppBar color="transparent" position="fixed" sx={{ top: 'auto', bottom: 0 }}>
+                <AppBar color="inherit" position="fixed" sx={{ top: 'auto', bottom: 0 }}>
                     <div className='icon-container'>
                         <a href="https://github.com/groverbraam" target="_blank"><ion-icon id="logo-github" name="logo-github"></ion-icon></a>
                         <a href="https://www.linkedin.com/in/christophermaleakethompson/" target="_blank"><ion-icon id="logo-linkedin" name="logo-linkedin"></ion-icon></a>

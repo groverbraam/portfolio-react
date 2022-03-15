@@ -337,6 +337,9 @@ input {
 	border-radius: 50%;
 	text-align: center;
 }
+.welcome-container{
+	margin: 200px;
+}
 
 .project-info-container {
 	font-family: Zen Kurenaido;
@@ -395,7 +398,13 @@ input {
 	margin-left: auto;
 	margin-right: auto;
 }
-
+.project-picture {
+	width: 700px;
+	height: 500px;
+}
+.footer {
+	margin-top: 400px;
+}
 @media (max-width: 640px) {
 	.icon-container {
 	padding-left: 20px;
